@@ -1,1 +1,70 @@
-/* Empty file for template. Remember to edit only this file and not the HTML file */
+@import url('https://fonts.googleapis.com/css2?family=Kite+One&display=swap');
+
+
+:root {
+    --font: "Kite One", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    color: #FFBB00;
+}
+
+body {
+    margin: 0;
+    background: black;
+    font-family: var(--font);
+    font-size: 20px;
+    color: black;
+    background: rgb(98,207,244);
+    background: linear-gradient(180deg, rgba(98,207,244,1) 0%, rgba(44,103,242,1) 86%, rgba(0,82,167,1) 99%);
+}
+
+img {
+    max-width: 100%;
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+
+div[role=article] { 
+    box-shadow: 0 3px 5px rgba(0,0,0,0.33);
+    background-color: rgba(255, 255, 255, 0.43);
+    border-radius: 1.5rem;
+}
+
+
+header[role=banner] h1{ 
+   display: flex;
+   justify-content: center;
+}
+
+div[role=article] h3, h2{ 
+    display: flex;
+    justify-content: center;
+    color: white;
+ }
+
+#zen-intro h1 { 
+    font-size: 128px;
+}
+
+#zen-intro h2 {
+    font-size: 24px;
+    margin-top: -130px;
+    margin-bottom: 150px;
+    font-weight: 200;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: white;
+    font-size: 2rem;
+    outline: none;
+}
