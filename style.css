@@ -14,13 +14,14 @@ a {
 }
 
 body {
-    margin: 0;
+    margin: 0 auto;
     background: black;
     font-family: var(--font);
     font-size: 20px;
     color: black;
     background: rgb(98,207,244);
     background: linear-gradient(180deg, rgba(98,207,244,1) 0%, rgba(44,103,242,1) 86%, rgba(0,82,167,1) 99%);
+    max-width: 75%;
 }
 
 img {
@@ -37,25 +38,36 @@ div[role=article] {
 
 
 header[role=banner] h1{ 
-   display: flex;
-   justify-content: center;
+   text-align: center;
 }
 
 div[role=article] h3, h2{ 
-    display: flex;
-    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
     color: white;
  }
 
-#zen-intro h1 { 
+#zen-intro h1 {
+    text-align: center;
     font-size: 128px;
 }
 
-#zen-intro h2 {
+#zen-intro h2  {
+    text-align: center;
     font-size: 24px;
-    margin-top: -130px;
-    margin-bottom: 150px;
+    margin-top: -12vh;
     font-weight: 200;
+}
+
+#zen-intro abbr[title] {
+    text-decoration: none;
+}
+
+
+#zen-intro header[role=banner]::after { 
+    content: url('/svg/land.svg');
+    width: 100%;
+    z-index: 100;
 }
 
 h1,
